@@ -1,5 +1,5 @@
-messages = "Witaj, Roman Glegoła \n"
-print("1. "+ messages)
+messages = "Witaj, Roman Glegoła"
+print("1. "+messages)
 
 mess1 = "Witaj"
 mess2 = "Roman"
