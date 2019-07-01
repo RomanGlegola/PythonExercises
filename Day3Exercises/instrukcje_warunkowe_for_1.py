@@ -1,4 +1,4 @@
-# repeatHowManyTimes = int(input("Please tell me how many times to repeat..."))
+repeatHowManyTimes = int(input("Please tell me how many times to repeat..."))
 
 for index in range(repeatHowManyTimes):
     print("Hello, it's me")
@@ -11,29 +11,32 @@ for miesiac in miesiace:
     print(str(miesiac))
 
 # # 1 wypisz co druga literę z napisu - uzyj petli for:
-text = "Python is a fantastic snake"
-jak_dużo_znakow = len(text)
+tekst = "Python is a fantastic snake"
+jak_dużo_znakow = len(tekst)
 
 for co_druga_litera in range(0, jak_dużo_znakow, 2):
-    print(text[co_druga_litera], end="")
+    print(tekst[co_druga_litera], end="")
 
 # 1.1 skrot - przeczytaj https://docs.python.org/release/2.3.5/whatsnew/section-slices.html i wypisz co druga litere, tym razem w krotszy sposob
+tekst = "Python is a fantastic snake"
+print(tekst[::2])
+
 # 1.2 wypisz teraz co trzecią literę :wink:
-text = "Python is a fantastic snake"
-print(text[::3])
+tekst = "Python is a fantastic snake"
+print(tekst[::3])
 
 # 2 wyszukaj w dokumentacji jak rozbić powyższy tekst na listę słów a nastepnie wydrukuj ta liste (for slowo in lista)
 # # you need to use method on text to seperate words
-text = "Python is a fantastic snake"
-word_list = text.split()
+tekst = "Python is a fantastic snake"
+lista_slow = tekst.split()
 
-for word in word_list:
-    print(str(word))
+for slowo in lista_slow:
+    print(str(slowo))
 # you need to print here
 
 # 3 zmien program z punktu drugiego tak, aby uzytkownik sam wpisal jakis tekst, ktory program mu rozbije na liste slow
 gadane = input()
-word_list = gadane.split()
+lista_slow = gadane.split()
 
-for gadane in word_list:
+for gadane in lista_slow:
     print(str(gadane))
