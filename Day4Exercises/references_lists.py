@@ -1,26 +1,26 @@
 # old_number = 4
 # new_number = old_number
 # old_number = 6
-#
+
 # print(old_number)
 # print(new_number)
 # print()
 # #old_number i new_number jako typy proste odnoszą się do innego miejsca w pamięci.
-#
+
 # old_list = [1,2,3]
 # new_list = old_list
 # old_list[0] = 4
-#
+
 # print(old_list)
 # print(new_list)
 # print()
 # #old_list i new_list jako typy złożone odnoszą się do takiego samego miejsca w pamięci.
-#
+
 # stara_lista = [1,2,3,4,5]
 # nowa_lista = stara_lista.copy()
 # nowa_lista = list(stara_lista)
 # nowa_lista = stara_lista[:]
-#
+
 # print(stara_lista)
 # print(nowa_lista)
 # print()
@@ -29,12 +29,12 @@
 # stary_string = "Mama"
 # nowy_string = stary_string
 # nowy_string = "nana"
-#
+
 # print(stary_string)
 # print(nowy_string)
 # print()
 # #stary_string i nowy_string jako typy proste odnoszą się do innego miejsca w pamięci.
-#
+
 # stara_nowa_lista = list(range(0, 10))
 # nowa_nowa_lista = []
 # #1 rozwiązanie
@@ -43,14 +43,14 @@
 # print(stara_nowa_lista)
 # print(nowa_nowa_lista)
 # print()
-#
+
 # #2 rozwiązanie
 # list_of_squares_2 = list(stara_nowa_lista[:])
 # for index, number in enumerate(stara_nowa_lista):
 #     list_of_squares_2[index] = number ** 2
 # print(list(stara_nowa_lista))
 # print(list_of_squares_2)
-#
+
 # #3 rozwiązanie
 # last_list_of_squares = [x**2 for x in stara_nowa_lista]
 # words = ["iTs", "mE", "PytHOn"]
@@ -58,7 +58,7 @@
 # print(new_words)
 # print(last_list_of_squares)
 # #podnosimy wartości stara_nowa_lista do potęgi 2 i wypisujemy wartości do nowa_nowa_lista.
-#
+
 # stara_nowsza_lista = [10, 10, 10, 10, 10, 10, 10, 10]
 # nowa_nowsza_lista = [20, 20, 20, 20, 20, 20, 20, 20]
 # z_sumowana_lista = []
@@ -69,7 +69,7 @@
 # print(z_sumowana_lista)
 # print()
 # #sumujemy stara_nowsza_lista i nowa_nowsza_lista do z_sumowana_lista.
-#
+
 # stara_jeszczenowsza_lista = [10, 10, 10, 10, 10, 10, 10, 10]
 # nowa_jeszczenowsza_lista = [20, 20, 20, 20, 20, 20, 20, 20]
 # dodawanie_lista = []

@@ -8,7 +8,7 @@ def wypisywanie_liczb(ilosc, co):
         print(f"{co}")
     x + 1
 
-# wypisywanie_liczb(7, "nana")
+#wypisywanie_liczb(7, "nana")
 
 def sumowanie_liczb(ilosc, co):
     """

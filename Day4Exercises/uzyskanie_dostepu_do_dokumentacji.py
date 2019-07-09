@@ -1,5 +1,3 @@
-import time
-
 def do_nothing(x, y):
     """Does absolutely nothing"""
     pass

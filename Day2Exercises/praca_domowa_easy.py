@@ -8,7 +8,7 @@ print(float_but_int)
 # Jakiego typu jest wynik (do sprawdzenia typu type(zmienna))?
 print(type(float_but_int))
 
-print(zadanie+  "2")
+print(zadanie + "2")
 # 2. (Kalkulator, albo Python) - liczba zapisana w systemie binarnym na 8 bitach - 11011010 to w systemie dziesietnym liczba:
 print("218")
 
