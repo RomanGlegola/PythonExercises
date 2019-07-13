@@ -8,8 +8,8 @@ for key, value in simple_dict.items():
 for key, value in simple_dict.items():
     print(f"pod kluczem {key} jest wartość {value}")
 
-    simple_dict[1] = "Matrix"
+    simple_dict[1999] = "Matrix"
     simple_dict[2] = "Johny Mnemonic"
 
 for key, value in simple_dict.items():
-    print(f"Keanu grał w filmie {key} ale rolą, która go do tego filmu zaprowadziła był film {value}")
+    print(f"w roku {key} w kinach pojawił się {value}")
