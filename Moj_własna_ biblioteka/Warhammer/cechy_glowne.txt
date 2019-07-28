@@ -1,0 +1,17 @@
+Walka wręcz:  4 
+Umiejętności Strzeleckie:  6 
+Krzepa:  4 
+Odporność:  5 
+Zręczność:  12 
+Siła woli:  14 
+Inteligencja:  19 
+Ogłada:  3 
+==============================
+Atak:  9 
+Żywotność:  8 
+Siła:  9 
+Wytrzymałość:  19 
+Szybkość:  3 
+Magia:  18 
+Punkty Obłędu:  3 
+Punkty Przeznaczenia:  10 
