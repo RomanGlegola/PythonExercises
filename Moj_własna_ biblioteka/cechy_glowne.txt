@@ -1,2 +1,0 @@
-{'Walka wręcz: ': 3, 'Umiejętności Strzeleckie: ': 19, 'Krzepa: ': 14, 'Odporność: ': 4, 'Zręczność: ': 0, 'Siła woli: ': 13, 'Inteligencja: ': 14, 'Ogłada: ': 13} 13 
-{'Atak: ': 1, 'Żywotność: ': 2} 8 
