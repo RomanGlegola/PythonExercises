@@ -18,41 +18,44 @@ try:
 except:
     print('Błąd pliku')
 
-msg = MIMEMultipart()
-
-#ustawiamy nagłówki niezbędne do poprawnej wysyłki maila
-#nadawca
-msg['From'] = adres_email
-
-#odbiorca
-msg['To'] = ['romanglegola@gmail.com']
-
-#temat
-msg['Subject'] = tytul_polski
-
-#dołączamy treść maila do naszej wiadomości
-msg.attach(text)
-
 try:
-    # tworzymy obiekt dzięki któremy wyślemy wiadomość
-    # w konstruktorze podajemy adres serwera dzięki któremy będziemy wysyłać wiadomość
-    server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    server.ehlo()
+    msg = MIMEMultipart()
+    msg.set_charset('utf-8')
 
-    # podany serwer wymaga uwierzytelnienia więc wywołujemy metodę do logowania
-    server.login(adres_email, haslo_email)
+    #ustawiamy nagłówki niezbędne do poprawnej wysyłki maila
+    #nadawca
+    msg['From'] = adres_email
 
-    # wywłamy wiadomość, moetoda msg.as_string() zamienia obiekt MIMEMultipart ze wszystkim załącznikami
-    # na wiadomość zgodną z RFC do wysłania wiadomośći
-    server.sendmail(msg['From'], msg['To'], msg.as_string())
+    #odbiorca
+    msg['To'] = ['romanglegola@gmail.com']
 
-    # zamykamy nasze połaczenie z serwerem
-    # analogicznie do otwierania plików można użyć tutaj konstrukcji with-as
-    # dzięki czemu server.quit() wykona się samo po wyjściu z bloku with i nie trzeba tej metody jawnie wykonywać
-    server.quit()
+    #temat
+    msg['Subject'] = tytul_polski
 
-    # potwierdzamy wysłanie wiadmości komunikatem
-    print('Wiadomość wysłana')
+    #dołączamy treść maila do naszej wiadomości
+    msg.attach(text)
+    print('Wiadomość utworzona')
 except:
-    # informujemy o błędzie występującym przy wysyłaniu wiadomości
-    print('Błąd wysyłania')
+    print('Błąd utworzenia wiadomości')
+
+
+# tworzymy obiekt dzięki któremy wyślemy wiadomość
+# w konstruktorze podajemy adres serwera dzięki któremy będziemy wysyłać wiadomość
+server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+server.ehlo()
+
+# podany serwer wymaga uwierzytelnienia więc wywołujemy metodę do logowania
+server.login(adres_email, haslo_email)
+
+# wywłamy wiadomość, moetoda msg.as_string() zamienia obiekt MIMEMultipart ze wszystkim załącznikami
+# na wiadomość zgodną z RFC do wysłania wiadomośći
+server.sendmail(msg['From'], msg['To'], msg['Subject'], msg.as_string(text), mail_options={'SMTPUTF8', 'BODY=8BITMIME'})
+
+# zamykamy nasze połaczenie z serwerem
+# analogicznie do otwierania plików można użyć tutaj konstrukcji with-as
+# dzięki czemu server.quit() wykona się samo po wyjściu z bloku with i nie trzeba tej metody jawnie wykonywać
+server.quit()
+
+# potwierdzamy wysłanie wiadmości komunikatem
+print('Wiadomość wysłana')
+
